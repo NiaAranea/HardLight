@@ -47,7 +47,7 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 100
+    autoRechargeRate: 550
   - type: SpaceArtillery
     powerChargeRate: 100
     powerUsePassive: 100
@@ -126,7 +126,7 @@
   description: A dual-barrel, heavy 90mm autocannon firing general-purpose APHE rounds, effective for sustained fire against medium targets. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 750
+    price: 1250
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/artillery.rsi
     layers:
@@ -171,55 +171,6 @@
   - type: ShipGunClass
     shipClass: Medium
 
-# TARNYX EMP 150mm
-
-- type: entity
-  id: WeaponTurretTarnyx
-  name: ADBX-31 TARNYX 150mm EMP Cannon
-  parent: BallisticArtilleryUnanchorable
-  description: A heavy EMP cannon made by Aetherion Dynamics, designed to disable large sections of enemy ships with a single, powerful shot. Effective in asymmetric combat. Can be remotely activated or linked up to a GCS.
-  components:
-  - type: StaticPrice
-    price: 1500
-  - type: Sprite
-    sprite: _Mono/Objects/ShuttleWeapons/tarnyx.rsi
-    layers:
-    - state: space_artillery
-  - type: Appearance
-  - type: FireControlRotate
-  - type: AmmoCounter
-  - type: Battery
-    maxCharge: 40000
-    startingCharge: 40000
-  - type: ExaminableBattery
-  - type: WirelessNetworkConnection
-    range: 500
-  - type: Gun
-    fireRate: 0.05
-    projectileSpeed: 400
-    soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/ship_duster.ogg
-    soundEmpty:
-      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 214
-  - type: SpaceArtillery
-    powerChargeRate: 214
-    powerUsePassive: 3500
-    powerUseActive: 0
-  - type: Actions
-  - type: ProjectileBatteryAmmoProvider
-    proto: ShipTarnyxProjectile
-    fireCost: 15000 # low shot weapon moved back to the original spot
-  - type: RadarBlip
-    radarColor: "#035EFC"
-    scale: 2.5
-  - type: ShipGunType
-    shipType: Ballistic
-  - type: ShipGunClass
-    shipClass: Heavy
-
 # CYREXA 220mm
 
 - type: entity
@@ -229,7 +180,7 @@
   description: A main battery with dual barrels, delivering rapid, punishing salvos at extreme range. Fires 220mm auto shells with slightly reduced brute strength. Can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 5000
+    price: 20000
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/cyrexa.rsi
     layers:
@@ -361,7 +312,7 @@
   description: A smaller, more compact railgun that fires a large slug at rapid velocity, capable of big damage to enemy ships. Medium linear accelerator, can be remotely activated or linked up to a GCS.
   components:
   - type: StaticPrice
-    price: 15000
+    price: 25000
   - type: Sprite
     sprite: _Mono/Objects/ShuttleWeapons/charonette.rsi
     layers:
@@ -427,7 +378,7 @@
   - type: ShipGunType
     shipType: Ballistic
   - type: ShipGunClass
-    shipClass: Medium
+    shipClass: Heavy
 
 # Bofors 255mm
 
