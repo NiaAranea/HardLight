@@ -173,8 +173,6 @@ public abstract partial class SharedBuckleSystem
 
         var popupString = Loc.GetString("hardlight-buckle-strap-attempt-user", ("target", args.User));
         _popup.PopupEntity(popupString, uid, uid, Popups.PopupType.MediumCaution);
-
-        _doAfter.TryStartDoAfter(doAfterArgs);
         // Hardlight end
 
         // Add a verb to buckle the user.
