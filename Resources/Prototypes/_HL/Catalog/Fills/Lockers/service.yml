@@ -1,0 +1,19 @@
+- type: entity
+  id: HLLockerBoozeFilled
+  suffix: Station, Filled
+  parent: HLLockerBooze
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerBooze
+
+- type: entity
+  id: HLLockerBotanistFilled
+  suffix: Station, Filled
+  parent: HLLockerBotanist
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: FillLockerBotanist
