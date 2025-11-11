@@ -292,12 +292,9 @@ public sealed partial class FireControlSystem : EntitySystem
                 {
                     if (diff.LengthSquared() > 0.01f)
                     {
-                        // Only rotate the gun if it has line of sight to the target
-                        if (HasLineOfSight(localWeapon, currentMapCoords.Position, destinationMapCoords.Position, currentMapCoords.MapId))
-                        {
-                            var goalAngle = Angle.FromWorldVec(diff);
-                            _rotateToFace.TryRotateTo(localWeapon, goalAngle, 0f, Angle.FromDegrees(1), float.MaxValue, weaponXform);
-                        }
+                        // Rotate towards target
+                        var goalAngle = Angle.FromWorldVec(diff);
+                        _xform.SetLocalRotation(localWeapon, goalAngle, weaponXform);
                     }
                 }
             }
@@ -316,9 +313,6 @@ public sealed partial class FireControlSystem : EntitySystem
 
             direction = Vector2.Normalize(direction);
 
-            // Check for obstacles in the firing direction
-            if (!CanFireInDirection(localWeapon, weaponPos, direction, targetPos.Position, weaponXform.MapID))
-                continue;
             // Check for obstacles in the firing direction
             if (!CanFireInDirection(localWeapon, weaponPos, direction, targetPos.Position, weaponXform.MapID))
                 continue;

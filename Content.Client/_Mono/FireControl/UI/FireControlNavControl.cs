@@ -45,7 +45,6 @@ public sealed class FireControlNavControl : BaseShuttleControl
     private EntityUid? _activeConsole;
     private FireControllableEntry[]? _controllables;
     private HashSet<NetEntity> _selectedWeapons = new();
-    private HashSet<NetEntity> _selectedWeapons = new();
 
     private List<Entity<MapGridComponent>> _grids = new();
 
@@ -66,10 +65,6 @@ public sealed class FireControlNavControl : BaseShuttleControl
     public Action<EntityCoordinates>? OnRadarClick;
     public bool ShowIFF { get; set; } = true;
     public bool RotateWithEntity { get; set; } = true;
-
-    // Add a limit to how often we update the cursor position to prevent network spam
-    private float _lastCursorUpdateTime = 0f;
-    private const float CursorUpdateInterval = 0.1f; // 10 updates per second
 
     public FireControlNavControl() : base(64f, 512f, 512f)
     {
@@ -404,17 +399,30 @@ public sealed class FireControlNavControl : BaseShuttleControl
         // No-op placeholder to maintain compatibility with previous shader clearing behavior.
     }
 
+    private void DrawShields(DrawingHandleScreen handle, TransformComponent xform, Matrix3x2 worldToShuttle)
+    {
+        // Placeholder for shield drawing - can be implemented later if needed
+    }
+
+    private void DrawShieldRing(DrawingHandleScreen handle, Vector2 position, float radius, Color color)
+    {
+        // Draw a ring with consistent thickness
+        handle.DrawCircle(position, radius, color, false);
+    }
+
     public void UpdateControllables(EntityUid console, FireControllableEntry[] controllables)
     {
         _activeConsole = console;
         _controllables = controllables;
     }
 
+    public void UpdateSelectedWeapons(HashSet<NetEntity> selectedWeapons)
+    {
+        _selectedWeapons = selectedWeapons;
+    }
+
     private Vector2 InverseScalePosition(Vector2 value)
     {
-        // Account for UI scaling: value is unscaled, so adjust by UIScale
-        var scaledValue = value * UIScale;
-        return (scaledValue - MidPointVector) / MinimapScale;
         // Account for UI scaling: value is unscaled, so adjust by UIScale
         var scaledValue = value * UIScale;
         return (scaledValue - MidPointVector) / MinimapScale;

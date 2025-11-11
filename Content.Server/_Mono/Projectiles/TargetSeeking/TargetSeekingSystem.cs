@@ -229,17 +229,18 @@ public sealed class TargetSeekingSystem : EntitySystem
 
             // If this entity has a grid UID, use that as our actual target
             // This targets the ship grid rather than just the console
-            var actualTarget = targetXform.GridUid ?? targetUid;
+            EntityUid effectiveTargetToConsider;
+            TransformComponent currentCandidateXform;
+            
+            if (targetXform.GridUid.HasValue)
+            {
+                effectiveTargetToConsider = targetXform.GridUid.Value;
+                currentCandidateXform = Transform(targetXform.GridUid.Value);
+            }
             else
             {
                 effectiveTargetToConsider = targetUid;
                 currentCandidateXform = targetXform;
-            }
-
-            if (component.OriginGridUid.HasValue &&
-                effectiveTargetToConsider == component.OriginGridUid.Value)
-            {
-                continue;
             }
 
             var targetPos = _transform.ToMapCoordinates(currentCandidateXform.Coordinates).Position;
