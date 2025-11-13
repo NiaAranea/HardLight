@@ -1118,17 +1118,17 @@ entities:
     - type: Transform
       pos: 0.5,9.5
       parent: 1
-  - uid: 111
+  - uid: 89
     components:
     - type: Transform
       pos: -0.5,9.5
       parent: 1
-  - uid: 112
+  - uid: 90
     components:
     - type: Transform
       pos: 1.5,9.5
       parent: 1
-  - uid: 113
+  - uid: 91
     components:
     - type: Transform
       pos: 4.5,7.5
@@ -1155,17 +1155,17 @@ entities:
     - type: Transform
       pos: 0.5,6.5
       parent: 1
-  - uid: 117
+  - uid: 95
     components:
     - type: Transform
       pos: -0.5,6.5
       parent: 1
-  - uid: 118
+  - uid: 96
     components:
     - type: Transform
       pos: 3.5,5.5
       parent: 1
-  - uid: 119
+  - uid: 97
     components:
     - type: Transform
       pos: 6.5,-1.5
@@ -1175,72 +1175,72 @@ entities:
     - type: Transform
       pos: 0.5,-2.5
       parent: 1
-  - uid: 120
+  - uid: 99
     components:
     - type: Transform
       pos: 2.5,-2.5
       parent: 1
-  - uid: 121
+  - uid: 100
     components:
     - type: Transform
       pos: -1.5,6.5
       parent: 1
-  - uid: 122
+  - uid: 101
     components:
     - type: Transform
       pos: -2.5,6.5
       parent: 1
-  - uid: 123
+  - uid: 102
     components:
     - type: Transform
       pos: -4.5,-3.5
       parent: 1
-  - uid: 124
+  - uid: 103
     components:
     - type: Transform
       pos: -3.5,-3.5
       parent: 1
-  - uid: 125
+  - uid: 104
     components:
     - type: Transform
       pos: -6.5,-3.5
       parent: 1
-  - uid: 126
+  - uid: 105
     components:
     - type: Transform
       pos: -5.5,1.5
       parent: 1
-  - uid: 127
+  - uid: 106
     components:
     - type: Transform
       pos: -6.5,1.5
       parent: 1
-  - uid: 128
+  - uid: 107
     components:
     - type: Transform
       pos: -3.5,6.5
       parent: 1
-  - uid: 129
+  - uid: 108
     components:
     - type: Transform
       pos: -0.5,3.5
       parent: 1
-  - uid: 130
+  - uid: 109
     components:
     - type: Transform
       pos: 6.5,0.5
       parent: 1
-  - uid: 131
+  - uid: 110
     components:
     - type: Transform
       pos: 4.5,6.5
       parent: 1
-  - uid: 132
+  - uid: 111
     components:
     - type: Transform
       pos: 1.5,6.5
       parent: 1
-  - uid: 133
+  - uid: 112
     components:
     - type: Transform
       pos: 0.5,5.5
@@ -1250,27 +1250,27 @@ entities:
     - type: Transform
       pos: 0.5,4.5
       parent: 1
-  - uid: 134
+  - uid: 114
     components:
     - type: Transform
       pos: 9.5,1.5
       parent: 1
-  - uid: 135
+  - uid: 115
     components:
     - type: Transform
       pos: 6.5,1.5
       parent: 1
-  - uid: 136
+  - uid: 116
     components:
     - type: Transform
       pos: 1.5,-2.5
       parent: 1
-  - uid: 137
+  - uid: 117
     components:
     - type: Transform
       pos: -8.5,-3.5
       parent: 1
-  - uid: 138
+  - uid: 118
     components:
     - type: Transform
       pos: 0.5,3.5
@@ -1280,12 +1280,12 @@ entities:
     - type: Transform
       pos: -1.5,3.5
       parent: 1
-  - uid: 139
+  - uid: 120
     components:
     - type: Transform
       pos: 2.5,3.5
       parent: 1
-  - uid: 140
+  - uid: 121
     components:
     - type: Transform
       pos: -2.5,-5.5
@@ -1295,92 +1295,92 @@ entities:
     - type: Transform
       pos: 8.5,1.5
       parent: 1
-  - uid: 141
+  - uid: 123
     components:
     - type: Transform
       pos: 7.5,1.5
       parent: 1
-  - uid: 142
+  - uid: 124
     components:
     - type: Transform
       pos: 10.5,-3.5
       parent: 1
-  - uid: 143
+  - uid: 125
     components:
     - type: Transform
       pos: 8.5,-3.5
       parent: 1
-  - uid: 144
+  - uid: 126
     components:
     - type: Transform
       pos: 7.5,-3.5
       parent: 1
-  - uid: 145
+  - uid: 127
     components:
     - type: Transform
       pos: -8.5,1.5
       parent: 1
-  - uid: 146
+  - uid: 128
     components:
     - type: Transform
       pos: -9.5,-3.5
       parent: 1
-  - uid: 147
+  - uid: 129
     components:
     - type: Transform
       pos: -2.5,-4.5
       parent: 1
-  - uid: 148
+  - uid: 130
     components:
     - type: Transform
       pos: 2.5,6.5
       parent: 1
-  - uid: 149
+  - uid: 131
     components:
     - type: Transform
       pos: 1.5,3.5
       parent: 1
-  - uid: 150
+  - uid: 132
     components:
     - type: Transform
       pos: -0.5,-5.5
       parent: 1
-  - uid: 151
+  - uid: 133
     components:
     - type: Transform
       pos: 0.5,-5.5
       parent: 1
-  - uid: 152
+  - uid: 134
     components:
     - type: Transform
       pos: -5.5,-3.5
       parent: 1
-  - uid: 153
+  - uid: 135
     components:
     - type: Transform
       pos: -2.5,-3.5
       parent: 1
-  - uid: 154
+  - uid: 136
     components:
     - type: Transform
       pos: -2.5,-1.5
       parent: 1
-  - uid: 155
+  - uid: 137
     components:
     - type: Transform
       pos: -2.5,-2.5
       parent: 1
-  - uid: 156
+  - uid: 138
     components:
     - type: Transform
       pos: -2.5,0.5
       parent: 1
-  - uid: 157
+  - uid: 139
     components:
     - type: Transform
       pos: 6.5,-0.5
       parent: 1
-  - uid: 158
+  - uid: 140
     components:
     - type: Transform
       pos: -7.5,1.5
@@ -2021,19 +2021,19 @@ entities:
     - type: Transform
       pos: 3.5,7.5
       parent: 1
-- proto: ComputerGunneryConsole
+- proto: ComputerIFF
   entities:
   - uid: 247
     components:
     - type: Transform
-      pos: -0.5,8.5
+      pos: 0.5,8.5
       parent: 1
-- proto: ComputerIFF
+- proto: ComputerMedicalRecords
   entities:
   - uid: 248
     components:
     - type: Transform
-      pos: 0.5,8.5
+      pos: -0.5,8.5
       parent: 1
 - proto: ComputerPowerMonitoring
   entities:
