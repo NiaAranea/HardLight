@@ -484,6 +484,7 @@
     - NFMedicalBoards # Frontier + Shitmed Change
     - NFServiceBoards # Frontier
     - MechBoardsPlus
+    - MonoAdvancedShuttleComponents # Hardlight
   - type: EmagLatheRecipes
     emagDynamicPacks: # Frontier: empty list
     - SecurityBoards # Frontier
