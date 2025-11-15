@@ -219,7 +219,7 @@
     rolls: !type:ConstantNumberSelector
       value: 5
     children:
-    - id: NFWeaponEnergySubMachineGunDisabler = HL
+    - id: NFWeaponEnergySubMachineGunDisabler # HL
     
 
 - type: entity
