@@ -736,12 +736,8 @@ public sealed class ShipyardGridSaveSystem : EntitySystem
                         compMap.Remove("rot");
                     }
 
-                    // Gravity: strip runtime 'enabled' flag to match blueprint outputs
-                    if (typeName == "Gravity")
-                    {
-                        compMap.Remove("enabled");
-                        compMap.Remove("Enabled");
-                    }
+                    // Gravity: preserve enabled state so gravity persists on ship load
+                    // (Removed stripping of enabled field)
 
                     // SpreaderGrid: strip accumulator fields
                     if (typeName == "SpreaderGrid")
