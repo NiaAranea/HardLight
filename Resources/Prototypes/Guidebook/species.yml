@@ -108,7 +108,6 @@
   name: species-name-avali
   text: "/ServerInfo/Guidebook/Mobs/Avali.xml"
 
-
 - type: guideEntry
   id: Protogen
   name: species-name-protogen
