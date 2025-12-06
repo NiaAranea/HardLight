@@ -328,3 +328,6 @@
 
 - type: Tag
   id: TiderAnvilParts
+
+- type: Tag
+  id: UnFlatpackable
