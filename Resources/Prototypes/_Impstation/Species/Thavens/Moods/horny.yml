@@ -21,6 +21,7 @@
   - Cuck
   - Sexpert
   - FuckRock
+  - AttractiveSpecies
 
 # Jumpsuits are uncomfortable, your skin needs to breathe. You should strive to be nude at all times.
 - type: thavenMood
@@ -150,3 +151,9 @@
   moodDesc: thaven-mood-fuck-rock-desc
   conflicts:
   - PetRock
+
+# {$species} are the most attractive species you've ever seen. You can't help but infatuated with them every time you see them.
+- type: thavenMood
+  id: AttractiveSpecies
+  moodName: thaven-mood-attractive-species-name
+  moodDesc: thaven-mood-attractive-species-desc
