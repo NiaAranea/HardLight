@@ -143,12 +143,12 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
 
     public HumanoidCharacterAppearance WithHeight(float newHeight)
     {
-        return new(HairStyleId, HairColor, FacialHairStyleId, FacialHairColor, EyeColor, SkinColor, Markings, newHeight, Width);
+        return new(HairStyleId, HairColor, HairGlowing, FacialHairStyleId, FacialHairColor, FacialHairGlowing, EyeColor, EyeGlowing, SkinColor, Markings, newHeight, Width);
     }
 
     public HumanoidCharacterAppearance WithWidth(float newWidth)
     {
-        return new(HairStyleId, HairColor, FacialHairStyleId, FacialHairColor, EyeColor, SkinColor, Markings, Height, newWidth);
+        return new(HairStyleId, HairColor, HairGlowing, FacialHairStyleId, FacialHairColor, FacialHairGlowing, EyeColor, EyeGlowing, SkinColor, Markings, Height, newWidth);
     }
 
     public static HumanoidCharacterAppearance DefaultWithSpecies(string species)
@@ -355,7 +355,7 @@ public sealed partial class HumanoidCharacterAppearance : ICharacterAppearance, 
         hash.Add(EyeColor);
         hash.Add(EyeGlowing);
         hash.Add(SkinColor);
-        hash.Add(Markings)
+        hash.Add(Markings);
         hash.Add(Height);
         hash.Add(Width);
         return hash.ToHashCode();
