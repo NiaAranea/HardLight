@@ -163,6 +163,33 @@
   equipment:
     outerClothing: ClothingOuterCoatBomberCrop
 
+- type: loadout
+  id: MercenaryClothingOuterArmoredJacketPMCBlue
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 600
+  equipment:
+    outerClothing: ClothingOuterArmoredJacketPMCBlue
+
+- type: loadout
+  id: MercenaryClothingOuterArmoredJacketPMCGreen
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 600
+  equipment:
+    outerClothing: ClothingOuterArmoredJacketPMCGreen
+
+- type: loadout
+  id: MercenaryClothingOuterArmoredJacketPMCOlive
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFCoatCapable
+  price: 600
+  equipment:
+    outerClothing: ClothingOuterArmoredJacketPMCOlive
+
 # Merc guns
 
 - type: loadout
