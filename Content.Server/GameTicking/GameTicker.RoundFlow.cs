@@ -65,6 +65,9 @@ namespace Content.Server.GameTicking
         [ViewVariables]
         private GameRunLevel _runLevel;
 
+        [ViewVariables]
+        private EntityUid? _pendingDefaultMapDelete;
+
         private RoundEndMessageEvent.RoundEndPlayerInfo[]? _replayRoundPlayerInfo;
 
         private string? _replayRoundText;
@@ -558,6 +561,7 @@ namespace Content.Server.GameTicking
             var defaultMapEntityUid = _mapManager.GetMapEntityId(DefaultMap);
             if (DefaultMap != null)
             {
+                var scheduledDefaultMap = DefaultMap; // Capture the current DefaultMap value
                 Timer.Spawn(TimeSpan.FromSeconds(30), () =>
                 {
                     // Send all players on the default map to the lobby before deleting the map
